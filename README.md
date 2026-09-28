@@ -59,6 +59,38 @@ The project is being developed incrementally, with new features, improvements, t
                 ┌─────────────────┐
                 │   PostgreSQL    │
                 └─────────────────┘
+```text
+architecture diagram
+```
+
+But the closing **three backticks are missing or misplaced** before `## Screenshots`.
+
+---
+
+## Fix it
+
+Your README should have this structure:
+
+````markdown
+## Architecture
+
+```text
+                ┌─────────────────┐
+                │  React Frontend │
+                └────────┬────────┘
+                         │
+                         │ HTTP / REST API
+                         ▼
+                ┌─────────────────┐
+                │ FastAPI Backend │
+                └────────┬────────┘
+                         │
+                         │ SQLAlchemy
+                         ▼
+                ┌─────────────────┐
+                │   PostgreSQL    │
+                └─────────────────┘
+```
 
 ## Screenshots
 
@@ -66,10 +98,10 @@ The project is being developed incrementally, with new features, improvements, t
 
 The React frontend provides the interface for creating, viewing, updating, and completing tasks.
 
-<img width="2292" height="1516" alt="Task Management Frontend" src="https://github.com/user-attachments/assets/40612e5f-10bd-47f3-96b1-2a170df73561" />
+![Task Management Frontend](https://github.com/user-attachments/assets/40612e5f-10bd-47f3-96b1-2a170df73561)
 
 ### REST API - Swagger Documentation
 
 The FastAPI backend provides REST APIs for task management. The APIs can be tested using Swagger/OpenAPI documentation.
 
-<img width="2812" height="1492" alt="Swagger API Documentation" src="https://github.com/user-attachments/assets/3b1c87ba-2983-4839-991f-ce6bf4cf755c" />
+![Swagger API Documentation](https://github.com/user-attachments/assets/3b1c87ba-2983-4839-991f-ce6bf4cf755c)
