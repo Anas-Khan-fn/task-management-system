@@ -59,3 +59,17 @@ The project is being developed incrementally, with new features, improvements, t
                 ┌─────────────────┐
                 │   PostgreSQL    │
                 └─────────────────┘
+
+## Screenshots
+
+### Task Management Frontend
+
+The React frontend provides the interface for creating, viewing, updating, and completing tasks.
+
+![Task Management Frontend](docs/screenshots/task-manager.png)
+
+### REST API - Swagger Documentation
+
+The FastAPI backend provides REST APIs for task management. The APIs can be tested using Swagger/OpenAPI documentation.
+
+![Swagger API Documentation](docs/screenshots/swagger-api.png)
